@@ -1,0 +1,1098 @@
+// var formEl = document.getElementById("form");
+
+// let j = ["","B","C","D","E","F","G","H","I","J"]
+// let k = ["","b","c","d","e","f","g","h","i"]
+// let biryani = [0,120,150,180,200,300,400,700,800];
+// let staters = [0,120,150,180,200,300,400,700,800];
+
+// formEl.addEventListener("change", () => {
+//     var nameEl = document.getElementById("name").value
+//     console.log(nameEl);
+//     var customernameEl = document.getElementById("customername").value = nameEl
+//     var mobilenumberEl = document.getElementById("mobilenumber").value
+//     var mobileEl = document.getElementById("mobile").value = mobilenumberEl
+
+//     var biryaniEl = Number(document.getElementById("types-of-biryani").value)
+//     var statersEl = Number(document.getElementById("types-of-staters").value )
+//     var billEl = document.getElementById("bill").value = biryaniEl
+//     subEl = billEl + statersEl
+//     var gstEl = document.getElementById("gst").value = (newBillEll * 18) / 100
+//     if (newBillEll === 0) {
+//         var tipEl = document.getElementById("tip").value = 0;
+//     } else if (newBillEll >70) {
+//         var tipEl = document.getElementById("tip").value = 200;
+//     }
+//     var totalbillEl = document.getElementById("totalbill").value = newBillEll + gstEl + tipEl
+
+//     var chooseYourBiryaniEl = document.getElementById("choose-your-biryani").value
+
+//     var newBillEll = document.getElementById("bill").value = biryaniEl * biryani[chooseYourBiryaniEl]
+
+//     var chooseYourStatersEl = document.getElementById("choose-your-staters").value;
+//     var newBillEll = document.getElementById("bill").value = statersEl * staters[chooseYourStatersEl]
+
+
+
+//     var newBillEll = document.getElementById("bill").value =statersEl * staters[chooseYourStatersEl]
+//     var numberOfBiryanisEl = document.getElementById("numberOfBiryanis").value = chooseYourBiryaniEl
+//     var numberOfStatersEl = document.getElementById("numberOfStaters").value = chooseYourStatersEl
+// })
+
+
+
+
+// function hide() {
+//     console.log("clicked");
+//     var newoneEl = document.getElementById("newone")
+//     newoneEl.style.cssText = " display:block; display:flex; flex-direction:column; align-items:center; gap:25px;"
+//     formEl.style.display = "none"
+//     var submitEl = document.querySelector(".submit").style.display = "none"
+
+// }
+
+// function home() {
+//     formEl.style.display = "block"
+//     newoneEl.style.cssText = " display:none;"
+// }
+
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+    <div class=" d-flex justify-content-center text-center p-4 ">
+        <img class="w-25  rounded-circle shadow-lg " src="./assets/logo.jpg" alt="">
+    </div>
+    <h1 class=" heading pt-4">Restaurant Bill</h1>
+
+
+    <form id="form" action="">
+        <div class="inputs">
+            <div class="pt-3">
+                <label for="">Name:-</label>
+                <input type="text" id="name" value="" placeholder="Name">
+            </div>
+            <div>
+                <label for="">Mobile:-</label>
+                <input type="number" id="mobilenumber" value="" placeholder="Mobile Number">
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <div>
+                    <label for="">Choose a Biryani:-</label>
+                    <select name="biryani" id="types-of-biryani">
+                        <option value=0>Quantity</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+    
+                    </select>
+                </div>
+            
+            <div>
+                <select name="" id="choose-your-biryani">
+                    <option value=0>Choose Your Biryani</option>
+                    <option value=1>Mutton Biryani</option>
+                    <option value=2>Memoni Biryani</option>
+                    <option value=3>Dindigul Biryani</option>
+                    <option value=4>Thalassery Biryani</option>
+                    <option value=5>Awadhi Biryani</option>
+                    <option value=6>Bhatkali Biryani</option>
+                    <option value=7>Tehari Biryani</option>
+                    <option value=8>Delhi Biryani</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <label for="">Staters:-</label>
+                <select name="staters" id="types-of-staters">
+                    <option value=0>Quantity</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+
+                </select>
+            </div>
+        
+        <div>
+            <select name="" id="choose-your-staters">
+                <option value="a">Choose Your staters</option>
+                <option value="b">Chettinad Biryani</option>
+                <option value="c">Memoni Biryani</option>
+                <option value="d">Dindigul Biryani</option>
+                <option value="e">Thalassery Biryani</option>
+                <option value="f">Awadhi Biryani</option>
+                <option value="g">Bhatkali Biryani</option>
+                <option value="h">Tehari Biryani</option>
+                <option value="i">Delhi Biryani</option>
+
+            </select>
+        </div>
+    </div>
+
+
+            <div class="pt-3">
+                <label for="">Your Total Bill:-</label>
+                <input type="number" id="bill" value="" placeholder="Total Bill">
+            </div>
+            <div class="pt-3">
+                <label for="">GST:-</label>
+                <input type="number" id="gst" value="" placeholder="GST">
+            </div>
+            <div class="pt-3">
+                <label for="">Tip:-</label>
+                <input type="number" id="tip" value="" placeholder="Tip">
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <div class="newone" id="newone">
+        <div>
+            <label for="">Customer Name:-</label>
+            <input type="text" id="customername" value="" placeholder="Customer Name">
+        </div>
+        <div>
+            <label for="">Mobile Number:-</label>
+            <input type="text" id="mobile" value="" placeholder="Mobile Number">
+
+        </div>
+        <div>
+            <label for="">Biryani Name:-</label>
+            <input type="text" id="numberOfBiryanis" value="" placeholder="Biryani Name">
+        </div>
+        <div>
+            <label for="">Stater Name:-</label>
+            <input type="text" id="numberOfStaters" value="" placeholder="Stater Name">
+        </div>
+        <div>
+            <label for="">Your Total Bill:-</label>
+            <input type="text" id="totalbill" value="" placeholder="Total Bill">
+
+        </div>
+
+
+        <h2 class="text-center">Thank You...</h2>
+        <div class="buttontwo">
+            <form action="/">
+                <button class="btn btn-primary back" onclick="home()">Home</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="buttonone">
+        <button class="btn btn-primary submit" onclick="hide()">Submit</button>
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html> -->
+ 
+* staters
+ 
+indigul Biryani
+ 
+Memoni Biryani
+ 
+Mutton Biryani
+ 
+Choose Your Biryani
+ 
+Memoni Biryani
+ 
+* staters
+ 
+* biryani
+ 
+,900,1000,780
+ 
+let staters = 1400;
+ 
+1800;
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+
+
+<body>
+
+    <div class=" d-flex justify-content-center text-center p-4 ">
+        <img class="w-25  rounded-circle shadow-lg " src="./assets/logo.jpg" alt="">
+    </div>
+    <h1 class=" heading pt-4">Restaurant Bill</h1>
+
+
+    <form id="form" action="">
+        <div class="inputs">
+            <div class="pt-3">
+                <label for="">Name:-</label>
+                <input type="text" id="name" value="" placeholder="Name">
+            </div>
+            <div>
+                <label for="">Mobile:-</label>
+                <input type="number" id="mobilenumber" value="" placeholder="Mobile Number">
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <div>
+                    <label for="">Choose a Biryani:-</label>
+                    <select name="biryani" id="types-of-biryani">
+                        <option value=0>Quantity</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
+                        <option value=6>6</option>
+                        <option value=7>7</option>
+                        <option value=8>8</option>
+    
+                    </select>
+                </div>
+            
+            <div>
+                <select name="" id="choose-your-biryani">
+                    <option value="Choose Your Biryani">Choose Your Biryani</option>
+                    <option value="Mutton Biryani">Mutton Biryani</option>
+                    <option value="Memoni Biryani">Memoni Biryani</option>
+                    <option value="Dindigul Biryani">Dindigul Biryani</option>
+                    <option value="Thalassery Biryani">Thalassery Biryani</option>
+                    <option value="Awadhi Biryani">Awadhi Biryani</option>
+                    <option value="Bhatkali Biryani">Bhatkali Biryani</option>
+                    <option value="Tehari Biryani">Tehari Biryani</option>
+                    <option value="Delhi Biryani">Delhi Biryani</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <label for="">Staters:-</label>
+                <select name="staters" id="types-of-staters">
+                    <option value=0>Quantity</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+
+                </select>
+            </div>
+        
+        <div>
+            <select name="" id="choose-your-staters">
+                <option value="Choose Your staters">Choose Your staters</option>
+                <option value="Chettinad Biryani">Chettinad Biryani</option>
+                <option value="Memoni Biryani">Memoni Biryani</option>
+                <option value="Dindigul Biryani">Dindigul Biryani</option>
+                <option value="Thalassery Biryani">Thalassery Biryani</option>
+                <option value="Awadhi Biryani">Awadhi Biryani</option>
+                <option value="Bhatkali Biryani">Bhatkali Biryani</option>
+                <option value="Tehari Biryani">Tehari Biryani</option>
+                <option value="Delhi Biryani">Delhi Biryani</option>
+
+            </select>
+        </div>
+    </div>
+
+
+            <div class="pt-3">
+                <label for="">Your Total Bill:-</label>
+                <input type="number" id="bill" value="" placeholder="Total Bill">
+            </div>
+            <div class="pt-3">
+                <label for="">GST:-</label>
+                <input type="number" id="gst" value="" placeholder="GST">
+            </div>
+            <div class="pt-3">
+                <label for="">Tip:-</label>
+                <input type="number" id="tip" value="" placeholder="Tip">
+            </div>
+        </div>
+    </form>
+
+
+
+
+    <div class="newone" id="newone">
+        <div>
+            <label for="">Customer Name:-</label>
+            <input type="text" id="customername" value="" placeholder="Customer Name">
+        </div>
+        <div>
+            <label for="">Mobile Number:-</label>
+            <input type="text" id="mobile" value="" placeholder="Mobile Number">
+
+        </div>
+        <div>
+            <label for="">Biryani Name:-</label>
+            <input type="text" id="numberOfBiryanis" value="" placeholder="Biryani Name">
+        </div>
+        <div>
+            <label for="">Stater Name:-</label>
+            <input type="text" id="numberOfStaters" value="" placeholder="Stater Name">
+        </div>
+        <div>
+            <label for="">Your Total Bill:-</label>
+            <input type="text" id="totalbill" value="" placeholder="Total Bill">
+
+        </div>
+
+
+        <h2 class="text-center">Thank You...</h2>
+        <div class="buttontwo">
+            <form action="/">
+                <button class="btn btn-primary back" onclick="home()">Home</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="buttonone">
+        <button class="btn btn-primary submit" onclick="hide()">Submit</button>
+
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+ 
+var formEl = document.getElementById("form");
+
+let biryani = 1800;
+let staters = 1400;
+
+formEl.addEventListener("change", () => {
+    var nameEl = document.getElementById("name").value
+    console.log(nameEl);
+    var customernameEl = document.getElementById("customername").value = nameEl
+    var mobilenumberEl = document.getElementById("mobilenumber").value
+    var mobileEl = document.getElementById("mobile").value = mobilenumberEl
+
+    var biryaniEl = document.getElementById("types-of-biryani").value * biryani
+
+    var statersEl = document.getElementById("types-of-staters").value * staters
+    var billEl = document.getElementById("bill").value = biryaniEl
+    subEl = billEl + statersEl
+    var newBillEll = document.getElementById("bill").value = subEl
+    var gstEl = document.getElementById("gst").value = (newBillEll * 18) / 100
+    if (newBillEll === 0) {
+        var tipEl = document.getElementById("tip").value = 0;
+    } else if (newBillEll > 2000) {
+        var tipEl = document.getElementById("tip").value = 200;
+    }
+    var totalbillEl = document.getElementById("totalbill").value = newBillEll + gstEl + tipEl
+
+    var chooseYourBiryaniEl = document.getElementById("choose-your-biryani").value
+    var chooseYourStatersEl = document.getElementById("choose-your-staters").value;
+    var numberOfBiryanisEl = document.getElementById("numberOfBiryanis").value = chooseYourBiryaniEl
+    var numberOfStatersEl = document.getElementById("numberOfStaters").value = chooseYourStatersEl
+})
+
+
+
+
+function hide() {
+    console.log("clicked");
+    var newoneEl = document.getElementById("newone")
+    newoneEl.style.cssText = " display:block; display:flex; flex-direction:column; align-items:center; gap:25px;"
+    formEl.style.display = "none"
+    var submitEl = document.querySelector(".submit").style.display = "none"
+
+}
+
+function home() {
+    formEl.style.display = "block"
+    newoneEl.style.cssText = " display:none;"
+}
+ 
+    <div>
+            <label for="">Biryani Name:-</label>
+            <input type="text" id="numberOfBiryanis" value="">
+        </div>
+        <div>
+            <label for="">Stater Name:-</label>
+            <input type="text" id="numberOfStaters" value="">
+        </div>
+ 
+console.log(chooseYourBiryaniEl);
+
+ 
+var chooseYourBiryaniEl = +document.getElementById("choose-your-biryani").value
+console.log(chooseYourBiryaniEl*100);
+var chooseYourStatersEl = document.getElementById("choose-your-staters").value;
+console.log(typeof chooseYourStatersEl);
+ 
+Chettinad Biryani
+ 
+staters
+ 
+Biryani
+ 
+"Choose Your Biryani
+ 
+"Chettinad Biryani"
+ 
+"Memoni Biryani"
+ 
+"Dindigul Biryani"
+ 
+"Thalassery Biryani"
+ 
+"Awadhi Biryani"
+ 
+"Bhatkali Biryani"
+ 
+"Tehari Biryani"
+ 
+"Delhi Biryani"
+ 
+0
+ 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            gap: 20px;
+            margin: auto;
+            padding-top: 80px;
+        }
+        input{
+            height: 30px;
+        }
+        nav{
+            display: flex;
+            text-align: center;
+            padding: 10px;
+        }
+        header{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            margin: 0 auto;
+        }
+        select{
+            font-size: 20px;
+            width: auto;
+            text-align: center;
+            margin: auto;
+        }
+        .hide-seek{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="" alt="LOGO" srcset="">
+            <h1>BILL DESK</h1>
+        </nav>   
+    </header>
+    <div id="form">
+    Name:-<input type="text" id="name" value="" placeholder="Customer Name">
+    Mobile:-<input type="number" id="mobile" value="" placeholder="Mobile No">
+    Biryani:-<select id="birayni-qty">
+        <option value=0>Qty</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+      </select>
+      Staters:-<select id="staters-qty">
+        <option value=0>Qty</option>
+        <option value=1>1</option>
+        <option value=2>2</option>
+        <option value=3>3</option>
+        <option value=4>4</option>
+        <option value=5>5</option>
+        <option value=6>6</option>
+      </select>          
+<div>
+    your total Bill is:-<input type="text" id="bill" value="" placeholder="Customer Name">
+    GST:-<input type="number" id="gst" value="" placeholder="GST">
+    TIP:-<input type="number" id="tip" value="" placeholder="Tip">
+</div>
+</div>
+
+<div class="hide-seek">
+    Name of Customer:-<input type="text" id="customer" value="" placeholder="Customer Name">
+    Mobile Number:-<input type="number" id="customer-mobile" value="" placeholder="Mobile Number">
+    your total bill is:-<input type="number" id="total-bill" value="" placeholder="total bill">
+</div>
+<button type="button" onclick="hide()" class="btn">Submit</button>
+
+<script src="app.js"></script>
+</body>
+</html> -->
+ 
+var formEl = document.getElementById("form");
+
+let biryani = 1800;
+let staters = 1400;
+
+formEl.addEventListener("change", ()=>{
+    var nameEl = document.getElementById("name").value
+    console.log(nameEl);
+    var customernameEl = document.getElementById("customername").value=nameEl
+    var mobilenumberEl = document.getElementById("mobilenumber").value
+    var mobileEl = document.getElementById("mobile").value=mobilenumberEl
+
+    var biryaniEl = document.getElementById("types-of-biryani").value*biryani
+    var statersEl = document.getElementById("types-of-staters").value*staters
+    var billEl = document.getElementById("bill").value = biryaniEl
+    subEl = billEl + statersEl
+    var newBillEll= document.getElementById("bill").value = subEl
+    var gstEl = document.getElementById("gst").value = (newBillEll*18)/100
+    if(newBillEll === 0 ){
+        var tipEl = document.getElementById("tip").value =0;
+    }else if(newBillEll > 2000){
+        var tipEl = document.getElementById("tip").value =200;
+    }
+    var totalbillEl =document.getElementById("totalbill").value = newBillEll+gstEl+tipEl
+})
+
+function hide(){
+    console.log("clicked");
+    var newoneEl = document.getElementById("newone")
+    newoneEl.style.cssText= " display:block; display:flex; flex-direction:column; align-items:center; gap:25px;"
+    formEl.style.display = "none"
+    var submitEl = document.querySelector(".submit").style.display = "none"
+
+}
+
+function home(){
+    formEl.style.display = "block"
+    newoneEl.style.cssText= " display:none;"
+}
+ 
+<div class="buttonone">
+    <button class="btn btn-primary submit" onclick="hide()">Submit</button>
+
+</div>    
+ 
+display:flex; flex-direction:column; align-items:center; gap:25px;
+ 
+<div class="buttontwo">
+    <button class="btn btn-primary back" onclick="home()">Home</button>
+
+</div> 
+ 
+submit
+ 
+ // newoneEl.style.flexDirection = "column"
+    // newoneEl.style.alignItems = "center"
+    // newoneEl.style.gap = "25px"
+ 
+.display 
+ 
+<input type="text" id="totalbill" value="" placeholder="Total Bill">
+        <h2 class="text-center">Thank You...</h2>
+ 
+  <label for="" >Mobile Number:-</label>
+        <input type="text" id="mobile" value="" placeholder="Mobile Number">
+        <label for="" >Your Total Bill:-</label>
+ 
+center
+ 
+display
+ 
+display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+class="newone"
+ 
+.buttonone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+else{
+        var tipEl = document.getElementById("tip").value =400;
+    }
+ 
+id="newone" 
+ 
+<div class="adding">
+    
+    </div>
+ 
+    <div class="pt-3">
+        <label for="">Your Total Bill:-</label>
+        <input type="number" id="bill" value="" placeholder="Total Bill">
+    </div>
+    <div class="pt-3">
+        <label for="" >GST:-</label>
+        <input type="number" id="gst" value="" placeholder="GST">
+    </div>
+    <div class="pt-3">
+        <label for="">Tip:-</label>
+        <input type="number" id="tip" value="" placeholder="Tip">
+    </div>
+ 
+
+    <div class="pt-3">
+        <label for="">Your Total Bill:-</label>
+        <input type="number" id="bill" value="" placeholder="Total Bill">
+    </div>
+    <div class="pt-3">
+        <label for="" >GST:-</label>
+        <input type="number" id="gst" value="" placeholder="GST">
+    </div>
+    <div class="pt-3">
+        <label for="">Tip:-</label>
+        <input type="number" id="tip" value="" placeholder="Tip">
+    </div>
+ 
+iv class="newone">
+        <label for="" >Customer Name:-</label>
+        <input type="text" id="customername" value="" placeholder="Customer Name">
+        <label for="" >Mobile Number:-</label>
+        <input type="text" id="mobile" value="" placeholder="Mobile Number">
+        <label for="" >Your Total Bill</label>
+        <input type="text" id="totalbill" value="" placeholder="Total Bill">
+        <!-- <h2 class="text-center">Thank You...</h2> -->
+       </div>
+    
+       <button class="btn btn-primary submit" onclick="hide()">Submit</button>
+ 
+    <div class="pt-3">
+            <label for="">Your Total Bill:-</label>
+            <input type="number" id="bill" value="" placeholder="Total Bill">
+        </div>
+        <div class="pt-3">
+            <label for="" >GST:-</label>
+            <input type="number" id="gst" value="" placeholder="GST">
+        </div>
+        <div class="pt-3">
+            <label for="">Tip:-</label>
+            <input type="number" id="tip" value="" placeholder="Tip">
+        </div>
+ 
+    <div class="pt-3">
+            <label for="">Your Total Bill:-</label>
+            <input type="number" id="bill" value="" placeholder="Total Bill">
+        </div>
+        <div class="pt-3">
+            <label for="" >GST:-</label>
+            <input type="number" id="gst" value="" placeholder="GST">
+        </div>
+        <div class="pt-3">
+            <label for="">Tip:-</label>
+            <input type="number" id="tip" value="" placeholder="Tip">
+        </div>
+ 
+</form>
+ 
+
+       <div class="newone">
+        <label for="" >Customer Name:-</label>
+        <input type="text" id="customername" value="" placeholder="Customer Name">
+        <label for="" >Mobile Number:-</label>
+        <input type="text" id="mobile" value="" placeholder="Mobile Number">
+        <label for="" >Your Total Bill</label>
+        <input type="text" id="totalbill" value="" placeholder="Total Bill">
+        <!-- <h2 class="text-center">Thank You...</h2> -->
+       </div>
+    
+       <button class="submit" onclick="hide()">Submit</button>
+    
+ 
+btn btn-primary
+ 
+function hide(){
+    formEl.style.display = "none"
+    var submitEl = document.getElementsByClassName(".submit").value.style.display = "none"
+    var newoneEl = document.getElementsByClassName(".newone").value.style.display = "block"
+
+}
+ 
+// var a = document.getElementById("form")
+var formEl = document.querySelector("form")
+
+
+
+// let biryani = 1500;
+// let staters = 1000;
+let biryani = 2000
+let staters = 1800
+
+// a.addEventListener("change", ()=>{
+formEl.addEventListener("change", ()=>{
+    
+//     var h = document.getElementById("name").value
+var nameEl = document.querySelector("name").value
+
+//     var i = document.getElementById("customer").value = h
+var customerNameEl = document.querySelector("customername").value = nameEl
+
+//     var j = document.getElementById("mobile").value
+var mobileNumEl = document.querySelector("mobilenumber").value 
+
+//     var k = document.getElementById("customer-mobile").value = j
+var mobileEl = document.querySelector("mobile").value = mobileNumEl 
+
+//     var b = +document.getElementById("birayni-qty").value * biryani
+var biryaniEl = +document.querySelector("types-of-biryani").value * biryani  
+
+//     var d = +document.getElementById("staters-qty").value * staters
+var statersEl = +document.querySelector("types-of-staters").value * staters 
+
+//     var c = document.getElementById("bill").value = b
+var billEl = document.querySelector("bill").value  = biryaniEl
+
+//     var e = b + d
+var sumEl = billEl + statersEl 
+
+//     var f = document.getElementById("bill").value = e
+var billElement = document.querySelector("bill").value = sumEl 
+
+     
+//     var r = document.getElementById("gst").value = (f*18)/100
+var gstEl = document.querySelector("gst").value = (billElement*19)/100
+
+//     if (f === 0) {
+    if(billElement === 0){
+
+//      var g = document.getElementById("tip").value = 0;
+var tipEl = document.querySelector("tip").value = 0
+
+//     } else if (f > 10000) {
+}else if(billElement > 4000){
+
+//         var g = document.getElementById("tip").value = 500;   
+var tipEl = document.querySelector("tip").value = 100
+
+//     } else {
+}else{
+
+//         var g = document.getElementById("tip").value = 1000;
+var tipEl = document.querySelector("tip").value = 200
+
+//     }
+}
+
+//     var p = document.getElementById("total-bill").value = f + r + g
+var totalBillEl = document.querySelector("totalbill").value = billElement + gstEl + tipEl
+
+// }) 
+});
+
+
+// function hide() {
+function all(){
+
+//     var x = document.querySelector(".hide-seek")
+var newoneEl = document.querySelector(".newone")
+
+
+//     x.style.display = "block"
+newoneEl.style.display = "block"
+
+//     a.style.display = "none"
+    formEl.style.display = "none"
+
+//     var n = document.querySelector(".btn").style.display = "none"
+var submitEl = document.querySelector("submit").style.display = "none"
+
+// }
+}
+
+// var formEl = document.querySelector("form")
+
+// let biryani = 2000
+// let staters = 1800
+
+// formEl.addEventListener("change", ()=>{
+//     var nameEl = document.querySelector("name").value
+//     var customerNameEl = document.querySelector("customername").value = nameEl
+//     var mobileNumEl = document.querySelector("mobilenumber").value 
+//     var mobileEl = document.querySelector("mobile").value = mobileNumEl 
+//     var biryaniEl = +document.querySelector("types-of-biryani").value * biryani  
+//     var statersEl = +document.querySelector("types-of-staters").value * staters 
+//     var billEl = document.querySelector("bill").value  = biryaniEl
+//     var sumEl = billEl + statersEl 
+//     var billElement = document.querySelector("bill").value = sumEl 
+//     var gstEl = document.querySelector("gst").value = (billElement*19)/100
+//     if(billElement == 0){
+//         var tipEl = document.querySelector("tip").value = 0
+//     }else if(billElement > 4000){
+//         var tipEl = document.querySelector("tip").value = 100
+//     }else{
+//         var tipEl = document.querySelector("tip").value = 200
+//     }
+//     var totalBillEl = document.querySelector("totalbill").value = billElement + gstEl + tipEl
+// });
+
+// function all(){
+//     var submitEl = document.querySelector("submit").style.display = "none"
+//     var newoneEl = document.querySelector("newone")
+//     newoneEl.style.display = "block"
+//     formEl.style.display = "none"
+    
+// }
+ 
+let biryani = 2000
+let staters = 1800
+ 
+.style.display = "none"
+ 
+var tipEl = document.querySelector("tip").value 
+ 
+varity
+ 
+biryani
+ 
+customername
+ 
+customername
+ 
+id="customername"
+ 
+Mirchi Ka Salan
+ 
+Chicken Rezala
+ 
+Mixed Vegetable Pakora
+ 
+Tomato Rasam
+ 
+Kacumberber Salad
+ 
+murgu
+ 
+scheherazad
+ 
+calicut
+ 
+makhni
+ 
+keema
+ 
+Keema Biryani
+ 
+keema
+ 
+   <div class=" d-flex justify-content-center text-center p-4 ">
+            <img class="w-25  rounded-circle shadow-lg " src="./assets/logo.jpg" alt="">
+        </div>
+        <h1 class=" heading pt-4">Restaurant Bill</h1>
+ 
+  <div class=" d-flex justify-content-center text-center p-4 ">
+            <img class="w-25  rounded-circle shadow-lg " src="./assets/logo.jpg" alt="">
+        </div>
+        <h1 class=" heading pt-4">Restaurant Bill</h1>
+ 
+/* width: 50%; */
+ 
+<style>
+    
+
+
+</style>
+ 
+    form{
+        border: 2px solid black ;
+        /* width: 50%; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .heading{
+        text-align: center;
+        color: cadetblue;
+        text-shadow: 0ch;
+        font-weight: 700;
+        font-style: unset;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        text-align: start;
+    }
+    label{
+        font-style: oblique;
+        font-weight: 700;
+    }
+ 
+ form{
+        border: 2px solid black ;
+        /* width: 50%; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .heading{
+        text-align: center;
+        color: cadetblue;
+        text-shadow: 0ch;
+        font-weight: 700;
+        font-style: unset;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        text-align: start;
+    }
+    label{
+        font-style: oblique;
+        font-weight: 700;
+    }
+ 
+Name
+ 
+       <div class="pt-3">
+            <label for="">Your Total Bill:-</label>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="pt-3">
+            <label for="">GST:-</label>
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="pt-3">
+            <label for="">Tip:-</label>
+            <input type="text" placeholder="Name">
+        </div>
+ 
+Name
+ 
+Murgh ki Biryani
+ 
+Scheherazad Biryani
+ 
+Calicut Chicken Biryani
+ 
+Makhni Peenar Biryani
+ 
+Awadi Mutton Biryani
+ 
+Keema Biryani
+ 
+<label for="">Starters</label>
+ 
+Bhatkali Biryani
+ 
+<input type="number" placeholder="se">
+ 
+.heading{
+        text-align: center;
+        color: cadetblue;
+        text-shadow: 0ch;
+        font-weight: 700;
+        font-style: unset;
+    }
+ 
+ <div>
+            <label for="">Name:-</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">mobile:-</label>
+            <input type="number">
+        </div>
+ 
+<label for="">mobile:-</label>
+            <input type="number">
+ 
+text
+ 
+class="form"
+ 
+<div class=" d-flex justify-content-center text-center p-4 ">
+        <img class="w-25  rounded-circle shadow-lg " src="./assets/logo.jpg" alt="">
+    </div>
+    <h1 class=" heading">Restaurant Bill</h1>
+
+
+    <!-- <input type="text"> -->
+ 
+ text-light
+ 
+<h1>Restaurant Bill</h1>
+ 
+h1>Restaurant Bill</h1>
+ 
+border-3 border-info
+ 

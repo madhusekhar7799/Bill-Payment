@@ -1,0 +1,56 @@
+
+form{
+    /* border: 2px solid black ; */
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.heading{
+    text-align: center;
+    color: cadetblue;
+    text-shadow: 0ch;
+    font-weight: 700;
+    font-style: unset;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: start;
+    border: 5px solid rgb(12, 146, 229) ;
+    padding: 70px 20px;
+
+}
+label{
+    font-style: oblique;
+    font-weight: 700;
+}
+
+.newone{
+    display: none;
+}
+.adding{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttonone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.buttontwo{
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
